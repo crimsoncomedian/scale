@@ -10,19 +10,7 @@
       font-family: sans-serif;
       text-align: center;
       margin-top: 50px;
-      background-color: #f4f4f4;
-    }
-
-    h2 {
-      margin-bottom: 30px;
-    }
-
-    .scale-container {
-      display: inline-block;
-      background: #d1d1d1;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
     }
 
     .scale-label {
@@ -71,10 +59,6 @@
     }
 
     @media print {
-      body {
-        background-color: white;
-        color: black;
-      }
       .tooltip {
         display: none !important;
       }
@@ -88,30 +72,28 @@
   </style>
 </head>
 <body>
-    <div class="scale-container">
-    <div class="scale-label">Mass (grams)</div>
-    <div class="scale">
-      <div class="digit">6
-        <div class="tooltip">Tens → 60 g</div>
-      </div>
-      <div class="digit">2
-        <div class="tooltip">Ones → 2 g</div>
-      </div>
-      <div class="digit">.
-        <div class="tooltip">Decimal point</div>
-      </div>
-      <div class="digit">4
-        <div class="tooltip">Tenths → 0.4 g</div>
-      </div>
-      <div class="digit">7
-        <div class="tooltip">Hundredths → 0.07 g</div>
-      </div>
-      <div class="digit">8
-        <div class="tooltip">Thousandths → 0.008 g</div>
-      </div>
-      <div class="digit" style="margin-left: 8px;">g
-        <div class="tooltip">Grams</div>
-      </div>
+  <div class="scale-label">Mass (grams)</div>
+  <div class="scale">
+    <div class="digit">6
+      <div class="tooltip">Tens → 60 g</div>
+    </div>
+    <div class="digit">2
+      <div class="tooltip">Ones → 2 g</div>
+    </div>
+    <div class="digit">.
+      <div class="tooltip">Decimal point</div>
+    </div>
+    <div class="digit">4
+      <div class="tooltip">Tenths → 0.4 g</div>
+    </div>
+    <div class="digit">7
+      <div class="tooltip">Hundredths → 0.07 g</div>
+    </div>
+    <div class="digit">8
+      <div class="tooltip">Thousandths → 0.008 g</div>
+    </div>
+    <div class="digit" style="margin-left: 8px;">g
+      <div class="tooltip">Grams</div>
     </div>
   </div>
 </body>
