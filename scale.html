@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decimal Place Value Explorer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .scale-container {
+      display: inline-block;
+      background: #d1d1d1;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .scale-label {
+      font-size: 14px;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .scale {
+      display: inline-flex;
+      background: #1e1e1e;
+      padding: 15px 25px;
+      border: 3px solid #888;
+      border-radius: 8px;
+      font-size: 36px;
+      font-family: 'VT323', monospace;
+      color: #00ff90;
+    }
+
+    .digit {
+      position: relative;
+      margin: 0 4px;
+      cursor: pointer;
+    }
+
+    .tooltip {
+      visibility: hidden;
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 6px 10px;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      white-space: nowrap;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .digit:hover .tooltip {
+      visibility: visible;
+    }
+
+    @media print {
+      body {
+        background-color: white;
+        color: black;
+      }
+      .tooltip {
+        display: none !important;
+      }
+      .scale {
+        color: black !important;
+        border-color: black !important;
+        background: none !important;
+        font-family: monospace !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Explore the Decimal Place Values</h2>
+  <div class="scale-container">
+    <div class="scale-label">Mass (grams)</div>
+    <div class="scale">
+      <div class="digit">6
+        <div class="tooltip">Tens → 60 g</div>
+      </div>
+      <div class="digit">2
+        <div class="tooltip">Ones → 2 g</div>
+      </div>
+      <div class="digit">.
+        <div class="tooltip">Decimal point</div>
+      </div>
+      <div class="digit">4
+        <div class="tooltip">Tenths → 0.4 g</div>
+      </div>
+      <div class="digit">7
+        <div class="tooltip">Hundredths → 0.07 g</div>
+      </div>
+      <div class="digit">8
+        <div class="tooltip">Thousandths → 0.008 g</div>
+      </div>
+      <div class="digit" style="margin-left: 8px;">g
+        <div class="tooltip">Grams</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
