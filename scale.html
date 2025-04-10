@@ -6,11 +6,20 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      margin-top: 50px;
+    html, body {
+      margin: 0;
+      padding: 0;
       background-color: white;
+      font-family: sans-serif;
+    }
+
+    .scale-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0;
     }
 
     .scale-label {
@@ -72,28 +81,30 @@
   </style>
 </head>
 <body>
-  <div class="scale-label">Mass (grams)</div>
-  <div class="scale">
-    <div class="digit">6
-      <div class="tooltip">Tens → 60 g</div>
-    </div>
-    <div class="digit">2
-      <div class="tooltip">Ones → 2 g</div>
-    </div>
-    <div class="digit">.
-      <div class="tooltip">Decimal point</div>
-    </div>
-    <div class="digit">4
-      <div class="tooltip">Tenths → 0.4 g</div>
-    </div>
-    <div class="digit">7
-      <div class="tooltip">Hundredths → 0.07 g</div>
-    </div>
-    <div class="digit">8
-      <div class="tooltip">Thousandths → 0.008 g</div>
-    </div>
-    <div class="digit" style="margin-left: 8px;">g
-      <div class="tooltip">Grams</div>
+  <div class="scale-wrapper">
+    <div class="scale-label">Mass (grams)</div>
+    <div class="scale">
+      <div class="digit">6
+        <div class="tooltip">Tens → 60 g</div>
+      </div>
+      <div class="digit">2
+        <div class="tooltip">Ones → 2 g</div>
+      </div>
+      <div class="digit">.
+        <div class="tooltip">Decimal point</div>
+      </div>
+      <div class="digit">4
+        <div class="tooltip">Tenths → 0.4 g</div>
+      </div>
+      <div class="digit">7
+        <div class="tooltip">Hundredths → 0.07 g</div>
+      </div>
+      <div class="digit">8
+        <div class="tooltip">Thousandths → 0.008 g</div>
+      </div>
+      <div class="digit" style="margin-left: 8px;">g
+        <div class="tooltip">Grams</div>
+      </div>
     </div>
   </div>
 </body>
